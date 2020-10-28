@@ -55,6 +55,14 @@
     padding-top: 10px;
 }
 
+.display-block {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}
+
 .analogRead {
     display: none;
     background-color: var(--color-quaternary);
@@ -84,4 +92,10 @@
 
 .analogReadWrite input {
     border-color: #ffffff;
+}
+
+p {
+    color: #3D3D3D;
+    margin-top: 30px;
+    text-align: center;
 }
