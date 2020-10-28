@@ -1,0 +1,87 @@
+.container {
+	width: 100%;
+	padding-left: 30%;
+	padding-right: 30%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container-2 {
+	width: 100%;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.select-type {
+    text-align: center;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    grid-gap: 10px;
+}
+
+.input-port {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.select-action-1 {
+    text-align: center;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    grid-gap: 10px;
+}
+
+.select-action-2 {
+    margin-bottom: 50px;
+}
+
+.start-action {
+    display: flex;
+    grid-gap: 10px;
+}
+
+.select-action-1 ~ .select-action-2 {
+    width: 49%;
+}
+
+/* estilização das configurações das opções selecionadas */
+
+/* leitura analógica */
+.padding-top-10 {
+    padding-top: 10px;
+}
+
+.analogRead {
+    display: none;
+    background-color: var(--color-quaternary);
+    border-radius: var(--radius);
+    color: #ffffff;
+    height: 20%;
+    margin-bottom: 50px;
+}
+
+.analogWrite {
+    display: none;
+    background-color: var(--color-quaternary);
+    border-radius: var(--radius);
+    color: #ffffff;
+    height: 20%;
+    margin-bottom: 50px;
+}
+
+.analogReadWrite {
+    display: none;
+    background-color: var(--color-quaternary);
+    border-radius: var(--radius);
+    color: #ffffff;
+    height: 61%;
+    margin-bottom: 50px;
+}
+
+.analogReadWrite input {
+    border-color: #ffffff;
+}
