@@ -16,6 +16,8 @@
 
 .bt-action-selected {}
 
+.bt-digital-value {}
+
 .bt-selected {
     height: var(--input-height);
     font-size: var(--font-size);

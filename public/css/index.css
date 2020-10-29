@@ -50,7 +50,6 @@
 
 /* estilização das configurações das opções selecionadas */
 
-/* leitura analógica */
 .padding-top-10 {
     padding-top: 10px;
 }
@@ -62,6 +61,8 @@
 .display-none {
     display: none;
 }
+
+/* estilização digital */
 
 .digitalRead {
     display: none;
@@ -77,8 +78,12 @@
     background-color: var(--color-quaternary);
     border-radius: var(--radius);
     color: #ffffff;
-    height: 20%;
+    height: 33%;
     margin-bottom: 50px;
+}
+
+.digitalWrite .bt-standard {
+    border-color: #ffffff;
 }
 
 .digitalReadWrite {
@@ -89,6 +94,8 @@
     height: 34%;
     margin-bottom: 50px;
 }
+
+/* estilização analógica */
 
 .analogRead {
     display: none;
