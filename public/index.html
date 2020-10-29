@@ -19,8 +19,8 @@
                     <label class="label" for="">Selecione o tipo:</label> 
                     <br />
                     <div class="select-type">
-                        <button class="bt-standard bt-standard-select">Analógico</button>
-                        <button class="bt-standard bt-standard-select">Digital</button>
+                        <button typeAction="analogico" class="bt-standard bt-standard-select">Analógico</button>
+                        <button typeAction="digital" class="bt-standard bt-standard-select">Digital</button>
                     </div>
                 </div>
                 <label class="label" for="">Porta:</label>
@@ -36,6 +36,126 @@
                         <button option="write" data-value="script2" class="bt-standard bt-action-select">Escrita</button>
                     </div>
                     <button option="readAndWrite" data-value="script3" class="bt-standard select-action-2 bt-action-select">Leitura e Escrita</button>
+                </div>
+                <div class="digitalRead">
+                    <div class="container-2">
+                        <div class="padding-top-10">
+                            <label for="">Selecione o pino de leitura</label>
+                            <br />
+                            <div class="custom-select">
+                                <select name="pino" id="pino">
+                                    <option value="0">Selecionar</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="digitalWrite">
+                    <div class="container-2">
+                        <div class="padding-top-10">
+                            <label for="">Selecione o pino de escrita</label>
+                            <br />
+                            <div class="custom-select">
+                                <select name="pino" id="pino">
+                                    <option value="0">Selecionar</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="digitalReadWrite">
+                    <div class="container-2">
+                        <div class="padding-top-10">
+                            <label for="">Selecione o pino de escrita</label>
+                            <br />
+                            <div class="custom-select">
+                                <select name="pino1" id="pino1">
+                                    <option value="0">Selecionar</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="padding-top-10">
+                            <label for="">Selecione o pino de escrita</label>
+                            <br />
+                            <div class="custom-select">
+                                <select name="pino2" id="pino2">
+                                    <option value="0">Selecionar</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
                 <div class="analogRead">
                     <div class="container-2">
@@ -95,7 +215,7 @@
                             <label for="">Selecione o pino de leitura</label>
                             <br />
                             <div class="custom-select">
-                                <select name="pino" id="pino">
+                                <select name="pino1" id="pino1">
                                     <option value="0">Selecionar</option>
                                     <option value="32">32</option>
                                     <option value="33">33</option>
@@ -111,7 +231,7 @@
                             <label for="">Selecione o pino de escrita</label>
                             <br />
                             <div class="custom-select">
-                                <select name="pino" id="pino">
+                                <select name="pino2" id="pino2">
                                     <option value="0">Selecionar</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>

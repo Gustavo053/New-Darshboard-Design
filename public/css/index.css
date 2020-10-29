@@ -63,6 +63,33 @@
     display: none;
 }
 
+.digitalRead {
+    display: none;
+    background-color: var(--color-quaternary);
+    border-radius: var(--radius);
+    color: #ffffff;
+    height: 20%;
+    margin-bottom: 50px;
+}
+
+.digitalWrite {
+    display: none;
+    background-color: var(--color-quaternary);
+    border-radius: var(--radius);
+    color: #ffffff;
+    height: 20%;
+    margin-bottom: 50px;
+}
+
+.digitalReadWrite {
+    display: none;
+    background-color: var(--color-quaternary);
+    border-radius: var(--radius);
+    color: #ffffff;
+    height: 34%;
+    margin-bottom: 50px;
+}
+
 .analogRead {
     display: none;
     background-color: var(--color-quaternary);
