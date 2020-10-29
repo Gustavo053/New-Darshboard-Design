@@ -1,5 +1,5 @@
-let buttons = document.querySelectorAll('.bt-action-select');
 let buttonsTypeAction = document.querySelectorAll('.bt-standard-select');
+let buttons = document.querySelectorAll('.bt-action-select');
 
 //pega os elementos HTML responsáveis pelos analógicos
 let analogRead = document.querySelector('.analogRead');
@@ -48,6 +48,9 @@ buttons.forEach(buttom => {
                 analogRead.style.display = 'none';
                 analogWrite.style.display = 'none';
                 analogReadWrite.style.display = 'block';
+            } else if (hiddenRender == 'plot') {
+                //configurações para fazer animações enquanto os dados são plotados
+                console.log('plotando os dados');
             } else {
                 alert('Erro ao selecionar a ação para execução');
             }
@@ -67,6 +70,9 @@ buttons.forEach(buttom => {
                 digitalRead.style.display = 'none';
                 digitalWrite.style.display = 'none';
                 digitalReadWrite.style.display = 'block';
+            } else if (hiddenRender == 'plot') {
+                //configurações para fazer animações enquanto os dados são plotados
+                console.log('plotando os dados');
             } else {
                 alert('Erro ao selecionar a ação para execução');
             }

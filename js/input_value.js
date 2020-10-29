@@ -20,7 +20,11 @@ btActionSelect.forEach(element => {
         for(let i = 0; i < btActionSelect.length; i++) {
             btActionSelect[i].classList.remove('bt-selected');
         }
-        element.classList.add('bt-selected');
+        if (element.getAttribute('option') == 'plot') {
+            element.classList.add('bt-selected-2');
+        } else {
+            element.classList.add('bt-selected');
+        }
     });
 });
 

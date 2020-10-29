@@ -44,9 +44,9 @@
     grid-gap: 10px;
 }
 
-.select-action-1 ~ .select-action-2 {
-    width: 49%;
-}
+/* .select-action-1 ~ .select-action-2 {
+    background-color: #6351AB;
+} */
 
 /* estilização das configurações das opções selecionadas */
 
@@ -111,7 +111,7 @@
     background-color: var(--color-quaternary);
     border-radius: var(--radius);
     color: #ffffff;
-    height: 58%;
+    height: 61%;
     margin-bottom: 50px;
 }
 
@@ -132,4 +132,8 @@ p {
     color: #3D3D3D;
     margin-top: 30px;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
 }
