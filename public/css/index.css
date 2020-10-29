@@ -22,7 +22,7 @@
     grid-gap: 10px;
 }
 
-.input-port {
+.input-text-config {
     margin-top: 10px;
     margin-bottom: 50px;
 }
@@ -111,7 +111,7 @@
     background-color: var(--color-quaternary);
     border-radius: var(--radius);
     color: #ffffff;
-    height: 20%;
+    height: 58%;
     margin-bottom: 50px;
 }
 

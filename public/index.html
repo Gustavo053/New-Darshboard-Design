@@ -1,4 +1,5 @@
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,15 +9,16 @@
     <link rel="stylesheet" href="./css/inputs.css" />
     <link rel="stylesheet" href="./css/custom_select.css" />
 </head>
+
 <body>
     <div class="container">
         <header>
-            <h1 class="title-main">Darshboard</h3>
+            <h1 class="title-main">Dashboard</h3>
         </header>
         <main>
             <div>
                 <div>
-                    <label class="label" for="">Selecione o tipo:</label> 
+                    <label class="label" for="">Selecione o tipo:</label>
                     <br />
                     <div class="select-type">
                         <button typeAction="analogico" class="bt-standard bt-standard-select">Analógico</button>
@@ -26,21 +28,35 @@
                 <label class="label" for="">Porta:</label>
                 <br />
                 <div>
-                    <input class="input-standard input-port" placeholder="Insira a porta" type="text" />
+                    <input class="input-standard input-text-config" placeholder="Insira a porta" type="text" />
+                </div>
+                <label class="label" for="">Firebase:</label>
+                <br />
+                <div>
+                    <input class="input-standard input-text-config" placeholder="Insira o link do database"
+                        type="text" />
+                </div>
+                <label class="label" for="">Broker MQTT:</label>
+                <br />
+                <div>
+                    <input class="input-standard input-text-config" placeholder="Insira o link do broker MQTT"
+                        type="text" />
                 </div>
                 <label class="label" for="">Selecione o que você quer:</label>
                 <br />
                 <div>
                     <div class="select-action-1">
                         <button option="read" data-value="script1" class="bt-standard bt-action-select">Leitura</button>
-                        <button option="write" data-value="script2" class="bt-standard bt-action-select">Escrita</button>
+                        <button option="write" data-value="script2"
+                            class="bt-standard bt-action-select">Escrita</button>
                     </div>
-                    <button option="readAndWrite" data-value="script3" class="bt-standard select-action-2 bt-action-select">Leitura e Escrita</button>
+                    <button option="readAndWrite" data-value="script3"
+                        class="bt-standard select-action-2 bt-action-select">Leitura e Escrita</button>
                 </div>
                 <div class="digitalRead">
                     <div class="container-2">
                         <div class="padding-top-10">
-                            <label for="">Selecione o pino de leitura</label>
+                            <label for="">Selecione o pino de leitura:</label>
                             <br />
                             <div class="custom-select">
                                 <select name="pino" id="pino">
@@ -66,12 +82,12 @@
                                 </select>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
                 <div class="digitalWrite">
                     <div class="container-2">
                         <div class="padding-top-10">
-                            <label for="">Selecione o pino de escrita</label>
+                            <label for="">Selecione o pino de escrita:</label>
                             <br />
                             <div class="custom-select">
                                 <select name="pino" id="pino">
@@ -104,12 +120,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
                 <div class="digitalReadWrite">
                     <div class="container-2">
                         <div class="padding-top-10">
-                            <label for="">Selecione o pino de leitura</label>
+                            <label for="">Selecione o pino de leitura:</label>
                             <br />
                             <div class="custom-select">
                                 <select name="pino1" id="pino1">
@@ -136,7 +152,7 @@
                             </div>
                         </div>
                         <div class="padding-top-10">
-                            <label for="">Selecione o pino de escrita</label>
+                            <label for="">Selecione o pino de escrita:</label>
                             <br />
                             <div class="custom-select">
                                 <select name="pino2" id="pino2">
@@ -162,12 +178,12 @@
                                 </select>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
                 <div class="analogRead">
                     <div class="container-2">
                         <div class="padding-top-10">
-                            <label for="">Selecione o pino de leitura</label>
+                            <label for="">Selecione o pino de leitura:</label>
                             <br />
                             <div class="custom-select">
                                 <select name="pino" id="pino">
@@ -187,7 +203,7 @@
                 <div class="analogWrite">
                     <div class="container-2">
                         <div class="padding-top-10">
-                            <label for="">Selecione o pino de escrita</label>
+                            <label for="">Selecione o pino de escrita:</label>
                             <br />
                             <div class="custom-select">
                                 <select name="pino" id="pino">
@@ -214,12 +230,24 @@
                                 </select>
                             </div>
                         </div>
+                        <div class="padding-top-10">
+                            <label for="">Canal:</label>
+                            <input placeholder="Insira o canal" class="input-standard" type="text" />
+                        </div>
+                        <div class="padding-top-10">
+                            <label for="">Resolução:</label>
+                            <input placeholder="Insira a resolução" class="input-standard" type="text" />
+                        </div>
+                        <div class="padding-top-10">
+                            <label for="">Valor:</label>
+                            <input placeholder="Insira a resolução" class="input-standard" type="number" />
+                        </div>
                     </div>
                 </div>
                 <div class="analogReadWrite">
                     <div class="container-2">
                         <div class="padding-top-10">
-                            <label for="">Selecione o pino de leitura</label>
+                            <label for="">Selecione o pino de leitura:</label>
                             <br />
                             <div class="custom-select">
                                 <select name="pino1" id="pino1">
@@ -235,7 +263,7 @@
                             </div>
                         </div>
                         <div class="padding-top-10">
-                            <label for="">Selecione o pino de escrita</label>
+                            <label for="">Selecione o pino de escrita:</label>
                             <br />
                             <div class="custom-select">
                                 <select name="pino2" id="pino2">
@@ -286,4 +314,5 @@
 <script src="../js/input_value.js"></script>
 <script src="../js/custom_select.js"></script>
 <script src="../js/hidden.js"></script>
+
 </html>
