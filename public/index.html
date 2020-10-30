@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Darshboard for ESP32</title>
+    <link rel="shortcut icon" href="./img/Loading page.svg" />
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/inputs.css" />
@@ -18,53 +19,53 @@
         <main>
             <div>
                 <div>
-                    <label class="label" for="">Selecione o tipo:</label>
+                    <label class="label" for="">Select type:</label>
                     <br />
                     <div class="select-type">
-                        <button typeAction="analogico" class="bt-standard bt-standard-select">Analógico</button>
+                        <button typeAction="analogico" class="bt-standard bt-standard-select">Analog</button>
                         <button typeAction="digital" class="bt-standard bt-standard-select">Digital</button>
                     </div>
                 </div>
-                <label class="label" for="">Porta:</label>
+                <label class="label" for="">Port:</label>
                 <br />
                 <div>
-                    <input class="input-standard input-text-config" placeholder="Insira a porta" type="text" />
+                    <input class="input-standard input-text-config" placeholder="Insert the port" type="text" />
                 </div>
                 <label class="label" for="">Firebase:</label>
                 <br />
                 <div>
-                    <input class="input-standard input-text-config" placeholder="Insira o link do database"
+                    <input class="input-standard input-text-config" placeholder="Insert the firebase link"
                         type="text" />
                 </div>
                 <label class="label" for="">Broker MQTT:</label>
                 <br />
                 <div>
-                    <input class="input-standard input-text-config" placeholder="Insira o link do broker MQTT"
+                    <input class="input-standard input-text-config" placeholder="Insert the link broker MQTT"
                         type="text" />
                 </div>
-                <label class="label" for="">Selecione o que você quer:</label>
+                <label class="label" for="">Select what you want:</label>
                 <br />
                 <div>
                     <div class="select-action-1">
-                        <button option="read" data-value="script1" class="bt-standard bt-action-select">Leitura</button>
+                        <button option="read" data-value="script1" class="bt-standard bt-action-select">Read</button>
                         <button option="write" data-value="script2"
-                            class="bt-standard bt-action-select">Escrita</button>
+                            class="bt-standard bt-action-select">Write</button>
                     </div>
                     <div class="select-action-1">
-                        <button option="readAndWrite" data-value="script3" class="bt-standard bt-action-select">Leitura e Escrita</button>
+                        <button option="readAndWrite" data-value="script3" class="bt-standard bt-action-select">Read and Write</button>
                         <a class="bt-standard-2 select-action-2" target="_blank" href="./graphic.html">
-                            <button option="plot" class="bt-standard-2 bt-action-select">Plotar dados</button>
+                            <button option="plot" class="bt-standard-2 bt-action-select">Plot data</button>
                         </a>
                     </div>
                 </div>
                 <div class="digitalRead">
                     <div class="container-2">
                         <div class="padding-top-10">
-                            <label for="">Selecione o pino de leitura:</label>
+                            <label for="">Select read pin:</label>
                             <br />
                             <div class="custom-select">
                                 <select name="pino" id="pino">
-                                    <option value="0">Selecionar</option>
+                                    <option value="0">Select</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
@@ -99,11 +100,11 @@
                 <div class="digitalWrite">
                     <div class="container-2">
                         <div class="padding-top-10">
-                            <label for="">Selecione o pino de escrita:</label>
+                            <label for="">Select write pin:</label>
                             <br />
                             <div class="custom-select">
                                 <select name="pino" id="pino">
-                                    <option value="0">Selecionar</option>
+                                    <option value="0">Select</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
@@ -133,7 +134,7 @@
                                 </select>
                             </div>
                             <div class="padding-top-10">
-                                <label for="">Selecione o valor:</label>
+                                <label for="">Select value:</label>
                                 <div class="select-type">
                                     <button data-value="1" class="bt-standard bt-digital-value">HIGH</button>
                                     <button data-value="0" class="bt-standard bt-digital-value">LOW</button>
@@ -145,11 +146,11 @@
                 <div class="digitalReadWrite">
                     <div class="container-2">
                         <div class="padding-top-10">
-                            <label for="">Selecione o pino de leitura:</label>
+                            <label for="">Select read pin:</label>
                             <br />
                             <div class="custom-select">
                                 <select name="pino1" id="pino1">
-                                    <option value="0">Selecionar</option>
+                                    <option value="0">Select</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
@@ -172,11 +173,11 @@
                             </div>
                         </div>
                         <div class="padding-top-10">
-                            <label for="">Selecione o pino de escrita:</label>
+                            <label for="">Select write pin:</label>
                             <br />
                             <div class="custom-select">
                                 <select name="pino2" id="pino2">
-                                    <option value="0">Selecionar</option>
+                                    <option value="0">Select</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
@@ -203,11 +204,11 @@
                 <div class="analogRead">
                     <div class="container-2">
                         <div class="padding-top-10">
-                            <label for="">Selecione o pino de leitura:</label>
+                            <label for="">Select read pin:</label>
                             <br />
                             <div class="custom-select">
                                 <select name="pino" id="pino">
-                                    <option value="0">Selecionar</option>
+                                    <option value="0">Select</option>
                                     <option value="32">32</option>
                                     <option value="33">33</option>
                                     <option value="34">34</option>
@@ -223,11 +224,11 @@
                 <div class="analogWrite">
                     <div class="container-2">
                         <div class="padding-top-10">
-                            <label for="">Selecione o pino de escrita:</label>
+                            <label for="">Select write pin:</label>
                             <br />
                             <div class="custom-select">
                                 <select name="pino" id="pino">
-                                    <option value="0">Selecionar</option>
+                                    <option value="0">Select</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
@@ -251,27 +252,27 @@
                             </div>
                         </div>
                         <div class="padding-top-10">
-                            <label for="">Canal:</label>
-                            <input placeholder="Insira o canal" class="input-standard" type="text" />
+                            <label for="">Channel:</label>
+                            <input placeholder="Insert the channel" class="input-standard" type="text" />
                         </div>
                         <div class="padding-top-10">
-                            <label for="">Resolução:</label>
-                            <input placeholder="Insira a resolução" class="input-standard" type="text" />
+                            <label for="">Resolution:</label>
+                            <input placeholder="Insert the resolution" class="input-standard" type="text" />
                         </div>
                         <div class="padding-top-10">
-                            <label for="">Valor:</label>
-                            <input placeholder="Insira a resolução" class="input-standard" type="number" />
+                            <label for="">Value:</label>
+                            <input placeholder="Insert the value" class="input-standard" type="number" />
                         </div>
                     </div>
                 </div>
                 <div class="analogReadWrite">
                     <div class="container-2">
                         <div class="padding-top-10">
-                            <label for="">Selecione o pino de leitura:</label>
+                            <label for="">Select read pin:</label>
                             <br />
                             <div class="custom-select">
                                 <select name="pino1" id="pino1">
-                                    <option value="0">Selecionar</option>
+                                    <option value="0">Select</option>
                                     <option value="32">32</option>
                                     <option value="33">33</option>
                                     <option value="34">34</option>
@@ -283,11 +284,11 @@
                             </div>
                         </div>
                         <div class="padding-top-10">
-                            <label for="">Selecione o pino de escrita:</label>
+                            <label for="">Select write pin:</label>
                             <br />
                             <div class="custom-select">
                                 <select name="pino2" id="pino2">
-                                    <option value="0">Selecionar</option>
+                                    <option value="0">Select</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
@@ -311,20 +312,20 @@
                             </div>
                         </div>
                         <div class="padding-top-10">
-                            <label for="">Canal:</label>
-                            <input placeholder="Insira o canal" class="input-standard" type="text" />
+                            <label for="">Channel:</label>
+                            <input placeholder="Insert the channel" class="input-standard" type="text" />
                         </div>
                         <div class="padding-top-10">
-                            <label for="">Resolução:</label>
-                            <input placeholder="Insira a resolução" class="input-standard" type="text" />
+                            <label for="">Resolution:</label>
+                            <input placeholder="Insert the resolution" class="input-standard" type="text" />
                         </div>
                     </div>
                 </div>
                 <div class="option2"></div>
                 <div class="option3"></div>
                 <div class="start-action">
-                    <button id="enviar" class="bt-submit">Enviar</button>
-                    <button id="parar" class="bt-stop">Parar</button>
+                    <button id="enviar" class="bt-submit">Submit</button>
+                    <button id="parar" class="bt-stop">Stop</button>
                 </div>
                 <p>01000101 01010011 01010000 00110011 00110010</p>
             </div>
